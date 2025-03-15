@@ -1,6 +1,6 @@
 services:
     db:
-        image: postgres:16.4
+        image: postgres:17-alpine
         container_name: postgres-simple-bank
         environment:
             POSTGRES_USER: jagres
