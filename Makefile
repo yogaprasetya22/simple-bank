@@ -14,7 +14,7 @@ migrate-up:
 	migrate -path db/migration -database "$(DB_ADDR)" -verbose up
 
 .PHONY: migrate-down
-migratedown:
+migrate-down:
 	migrate -path db/migration -database "$(DB_ADDR)" -verbose down
 
 .PHONY: seed
